@@ -1,0 +1,738 @@
+.page {
+  background-color: rgba(13, 13, 13, 1);
+  position: relative;
+  width: 100%;
+  min-height: 3467px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  @media only screen and (max-width: 768px) {
+    min-height: 4440px;
+    padding: unset;
+    position: unset;
+  }
+
+  .bannerImage {
+    position: absolute;
+    aspect-ratio: 1920/1080;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-position: center;
+  }
+  .banner {
+    width: 100%;
+    height: 1080px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    .topContainer {
+      width: 100%;
+      height: 100%;
+      max-width: 1400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 9;
+      .spImg {
+        width: 640px;
+        height: 640px;
+      }
+      .spTxtContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .topTxt {
+          font-family: Inter-bold, Inter;
+          font-weight: bold;
+          font-size: 64px;
+          color: #ffffff;
+          line-height: 77px;
+          text-align: left;
+          font-style: normal;
+        }
+        .subTxt {
+          font-family: Inter, Inter;
+          font-weight: 400;
+          font-size: 48px;
+          color: #ffffff;
+          line-height: 59px;
+          text-align: left;
+          font-style: normal;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      height: 640px;
+      padding: 20px;
+      .topContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .spImg {
+          width: 320px;
+          height: 320px;
+        }
+        .spTxtContainer {
+          margin-top: -60px;
+          gap: 4px;
+          align-items: center;
+          justify-content: center;
+          .topTxt {
+            font-size: 32px;
+            line-height: 39px;
+          }
+          .subTxt {
+            text-align: center;
+            line-height: 29px;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .container { 
+    width: 100%;
+    max-width: 1400px;
+    position: absolute;
+    padding: 0 40px;
+    margin-top: 760px;
+    .topMem {
+      width: 100%;
+      height: 480px;
+      background: rgba(26, 26, 26, 0.5);
+      border-radius: 20px;
+      border: 1px solid #f25aa4;
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .memTitle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 24px;
+        font-family: Inter, Inter;
+        font-weight: bold;
+        font-size: 32px;
+        color: #f25aa4;
+        line-height: 39px;
+        text-align: center;
+        font-style: normal;
+      }
+      .tableTitle {
+        font-family: Inter, Inter;
+        font-weight: 400;
+        font-size: 16px;
+        color: #cccccc;
+        line-height: 20px;
+        text-align: left;
+        font-style: normal;
+        width: 100%;
+        max-width: 1320px;
+        height: 40px;
+        background: #000000;
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: row;
+        .leftTitle {
+          width: 20%;
+        }
+        .centerTitle {
+          width: 40%;
+        }
+      }
+      .tableContent {
+        width: 100%;
+        height: 100%;
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .emptyImg {
+          width: 120px;
+          height: 120px;
+        }
+        .emptyText {
+          font-family: Inter, Inter;
+          font-weight: 400;
+          font-size: 16px;
+          color: #cccccc;
+          padding: 0 20px;
+          line-height: 20px;
+          text-align: center;
+          font-style: normal;
+        }
+      }
+    }
+    .aboutDao {
+      width: 100%;
+      height: 480px;
+      display: flex;
+      margin-top: 120px;
+      flex-direction: row;
+      align-items: center;
+      .aboutLeft {
+        width: 60%;
+        position: absolute;
+        left: 40px;
+        display: flex;
+        flex-direction: column;
+        .aboutTitle {
+          font-family: PerfectMoment, PerfectMoment;
+          font-weight: normal;
+          font-size: 48px;
+          color: #f25aa4;
+          line-height: 83px;
+          text-align: left;
+          font-style: normal;
+        }
+        .aboutItemTitle {
+          font-family: Inter-bold, Inter;
+          font-weight: bold;
+          font-size: 16px;
+          color: #ffffff;
+          line-height: 20px;
+          text-align: left;
+          font-style: normal;
+          padding-bottom: 14px;
+        }
+        .aboutItemSubTitle {
+          font-family: Inter, Inter;
+          font-weight: 400;
+          font-size: 14px;
+          color: #ffffff;
+          line-height: 17px;
+          text-align: left;
+          font-style: normal;
+          padding-bottom: 14px;
+        }
+      }
+      .aboutImg {
+        position: absolute;
+        right: 40px;
+        width: 45%;
+        margin-left: -5%;
+      }
+    }
+    .memeber{
+      width: 100%;
+      height: fit-content;
+     
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .mobileContainer {
+    width: 100%;
+    margin-top: 600px;
+    padding: 0 20px;
+    position: unset;
+    display: none;
+    flex-direction: column;
+    .topMem {
+      width: 100%;
+      height: 480px;
+      background: rgba(26, 26, 26, 0.5);
+      border-radius: 20px;
+      border: 1px solid #f25aa4;
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .memTitle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 24px;
+        font-family: Inter, Inter;
+        font-weight: bold;
+        font-size: 32px;
+        color: #f25aa4;
+        line-height: 39px;
+        text-align: center;
+        font-style: normal;
+      }
+      .tableTitle {
+        font-family: Inter, Inter;
+        font-weight: 400;
+        font-size: 16px;
+        color: #cccccc;
+        line-height: 20px;
+        text-align: left;
+        font-style: normal;
+        width: 100%;
+        max-width: 1320px;
+        height: 40px;
+        background: #000000;
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: row;
+        .leftTitle {
+          width: 20%;
+        }
+        .centerTitle {
+          width: 40%;
+        }
+      }
+      .tableContent {
+        width: 100%;
+        height: 100%;
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .emptyImg {
+          width: 120px;
+          height: 120px;
+        }
+        .emptyText {
+          font-family: Inter, Inter;
+          font-weight: 400;
+          font-size: 16px;
+          color: #cccccc;
+          padding: 0 20px;
+          line-height: 20px;
+          text-align: center;
+          font-style: normal;
+        }
+      }
+    }
+    .aboutDao {
+      height: 800px;
+      width: 100%;
+      display: flex;
+      margin-top: 40px;
+      gap: 16px;
+      flex-direction: column;
+      align-items: center;
+      .aboutLeft {
+        width: 100%;
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        .aboutTitle {
+          font-family: PerfectMoment, PerfectMoment;
+          font-weight: normal;
+          font-size: 40px;
+          color: #f25aa4;
+          line-height: 69px;
+          text-align: left;
+          font-style: normal;
+        }
+        .aboutItemTitle {
+          font-family: Inter-bold, Inter;
+          font-weight: bold;
+          font-size: 16px;
+          color: #ffffff;
+          line-height: 20px;
+          text-align: left;
+          font-style: normal;
+          padding-bottom: 14px;
+        }
+        .aboutItemSubTitle {
+          font-family: Inter, Inter;
+          font-weight: 400;
+          font-size: 14px;
+          color: #ffffff;
+          line-height: 17px;
+          text-align: left;
+          font-style: normal;
+          padding-bottom: 14px;
+        }
+      }
+      .aboutImg {
+        position: unset;
+        width: 100%;
+      }
+    }
+    .memeber{
+      width: 100%;
+      height: fit-content;
+      min-height: 400px;
+    }
+    @media only screen and (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  .bottomContainer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-position: center;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .bottomContent {
+    width: 100%;
+    padding: 0 40px;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    left: 0;
+    bottom: 60px;
+    right: 0;
+    .bContent {
+      width: 100%;
+      max-width: 1400px;
+      // height: 1080px;
+      background: rgba(26, 26, 26, 0.5);
+      border-radius: 20px;
+      border: 1px solid #f25aa4;
+      backdrop-filter: blur(10px);
+      display: flex;
+      padding: 0 40px 40px 40px;
+      flex-direction: column;
+      .bTitle {
+        padding: 24px;
+        font-family: Inter, Inter;
+        font-weight: bold;
+        font-size: 32px;
+        color: #f25aa4;
+        line-height: 39px;
+        text-align: center;
+        font-style: normal;
+        border-bottom: 1px solid #f25aa4;
+      }
+      .bTableContainer {
+        width: 100%;
+        height: 100%;
+        gap: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        .tableItem {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          .itemTitle {
+            margin-bottom: 16px;
+            font-family: Inter, Inter;
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffffff;
+            line-height: 24px;
+            text-align: left;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 4px;
+            .itemTitleIcon {
+              width: 20px;
+              height: 20px;
+              fill: #ffffff;
+            }
+          }
+          .itemContainer {
+            width: 100%;
+            height: 40px;
+            display: grid;
+            background-color: #000000;
+            gap: 1px;
+            align-items: center;
+            padding: 0 20px;
+            grid-template-columns: 45% 25% auto;
+            .itemTxt {
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              color: #ffffff;
+              line-height: 20px;
+              text-align: left;
+              font-style: normal;
+            }
+
+            .itemIcon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .itemContainerC {
+            width: 100%;
+            height: 64px;
+            display: grid;
+            gap: 1px;
+            align-items: center;
+            padding: 0 20px;
+            grid-template-columns: 45% 25% auto;
+            background: #0d0d0d;
+            height: 64px;
+            gap: 10px;
+            border-bottom: 1px solid rgba(26, 26, 26, 0.5);
+            .itemTxt {
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              color: #ffffff;
+              line-height: 20px;
+              text-align: left;
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              font-style: normal;
+              .itemIcon {
+                width: 24px;
+                height: 24px;
+              }
+            }
+            .itemClaimRed {
+              color: #f25aa4;
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              text-align: left;
+              font-style: normal;
+            }
+          }
+          .itemEmpty {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            .emptyImg {
+              width: 120px;
+              height: 120px;
+            }
+            .emptyText {
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              color: #cccccc;
+              line-height: 20px;
+              text-align: center;
+              font-style: normal;
+            }
+          }
+          .itemDes {
+            width: 100%;
+            height: 64px;
+            background: #0d0d0d;
+            font-family: Inter, Inter;
+            font-weight: 400;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            color: #666666;
+            line-height: 15px;
+            text-align: left;
+            font-style: normal;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .mobileBottomContent {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 60px;
+    align-items: center;
+    position: unset;
+    margin-top: 20px;
+    justify-content: center;
+    display: none;
+    background-image: url("./../../assets/image/mushrooms.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    .bContent {
+      width: 100%;
+      max-width: 1400px;
+      background: rgba(26, 26, 26, 0.5);
+      border-radius: 20px;
+      border: 1px solid #f25aa4;
+      backdrop-filter: blur(10px);
+      display: flex;
+      padding: 0 20px 20px 20px;
+      flex-direction: column;
+      .bTitle {
+        padding: 24px;
+        font-family: Inter, Inter;
+        font-weight: bold;
+        font-size: 32px;
+        color: #f25aa4;
+        line-height: 39px;
+        text-align: center;
+        font-style: normal;
+        border-bottom: 1px solid #f25aa4;
+      }
+      .bTableContainer {
+        width: 100%;
+        height: 100%;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        .tableItem {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          .itemTitle {
+            margin-bottom: 16px;
+            font-family: Inter, Inter;
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffffff;
+            line-height: 24px;
+            text-align: left;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 4px;
+            .itemTitleIcon {
+              width: 20px;
+              height: 20px;
+              fill: #ffffff;
+            }
+          }
+          .itemContainer {
+            width: 100%;
+            height: 40px;
+            display: grid;
+            background-color: #000000;
+            gap: 1px;
+            align-items: center;
+            padding: 0 20px;
+            grid-template-columns: 45% 25% auto;
+            .itemTxt {
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              color: #ffffff;
+              line-height: 20px;
+              text-align: left;
+              font-style: normal;
+            }
+
+            .itemIcon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .itemContainerC {
+            width: 100%;
+            height: 64px;
+            display: grid;
+            gap: 1px;
+            align-items: center;
+            padding: 0 20px;
+            grid-template-columns: 45% 25% auto;
+            background: #0d0d0d;
+            height: 64px;
+            gap: 10px;
+            border-bottom: 1px solid rgba(26, 26, 26, 0.5);
+            .itemTxt {
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              color: #ffffff;
+              line-height: 20px;
+              text-align: left;
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              font-style: normal;
+              .itemIcon {
+                width: 24px;
+                height: 24px;
+              }
+            }
+            .itemClaimRed {
+              color: #f25aa4;
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              text-align: left;
+              font-style: normal;
+            }
+          }
+          .itemEmpty {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            .emptyImg {
+              width: 120px;
+              height: 120px;
+            }
+            .emptyText {
+              font-family: Inter, Inter;
+              font-weight: 400;
+              font-size: 16px;
+              color: #cccccc;
+              line-height: 20px;
+              text-align: center;
+              font-style: normal;
+            }
+          }
+          .itemDes {
+            width: 100%;
+            height: 64px;
+            background: #0d0d0d;
+            font-family: Inter, Inter;
+            font-weight: 400;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            color: #666666;
+            line-height: 15px;
+            text-align: left;
+            font-style: normal;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      display: flex;
+    }
+  }
+}
